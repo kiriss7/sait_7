@@ -1,5 +1,610 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Lato", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #ed4c5c;
+}
+
+a:hover {
+    color: #ed4c5caf;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.header {}
+
+.header_bacground {
+    background-image: url(img/Bg\ \(1\).png);
+    height: 782px;
+}
+
+.header_navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.logo {
+    max-width: 172px;
+}
+
+.menu_papa {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu_item {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header_button_navbar {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background: #ffffff00;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+
+    border: 1px solid white;
+
+
+}
+
+.header_text_papa {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.header_title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header_text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+    max-width: 445px;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-bottom: 65px;
+}
+
+
+.header_button {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ed4c5c;
+    border-radius: 6px;
+    width: 160px;
+    height: 50px;
+    background: #fff;
+    border: #fff 1px solid;
+}
+
+.about {}
+
+.about_papa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 94px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.about_text_papa {}
+
+.about_title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    color: #000;
+
+}
+
+.about_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #000;
+    max-width: 445px;
+    padding: 30px 0;
+}
+
+.about_a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+
+
+}
+
+.about_img {
+    max-width: 445px;
+}
+
+.opportunities {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.opportunities_title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+
+    color: #000;
+}
+
+.opportunities_papa {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opportunities_item {
+    position: relative;
+}
+
+.opportunities_img {
+    border-radius: 8px;
+    max-width: 350px;
+}
+
+.opportunities_item_card {
+    position: absolute;
+    max-width: 280px;
+    height: 200px;
+    top: 63%;
+    left: 10%;
+    right: 10%;
+
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 8px;
+    padding: 25px 20px;
+
+}
+
+.opportunities_item_card_title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #101010;
+}
+
+.opportunities_item_card_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    padding: 20px;
+    color: #101010;
+}
+
+.opportunities_item_card_a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.tehlogy {
+    margin-top: 250px;
+}
+
+.tehnology_title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+
+}
+
+.tehnology_papa {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 50px;
+    justify-items: center
+}
+
+.tehnology_item {
+    position: relative;
+    max-width: 190px;
+    text-align: center;
+}
+
+.tehnology_img {
+    max-width: 117px;
+    height: 120px;
+
+}
+
+.tehnology_card {
+    position: absolute;
+    left: 0%;
+    top: 55%;
+    height: 140px;
+    bottom: 45%;
+
+}
+
+.tehnology_card_img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.tehnology_card_title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #101010;
+}
+
+.tree {
+    width: 60px;
+    height: 60px;
+}
+
+.tree_title {
+    padding-top: 20px;
+}
+
+.tehnology_card_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+
+    color: #000;
+}
+
+.money {
+    margin-top: 200px;
+    background: #ed4c5c;
+    min-height: 500px;
+}
+
+.money_papa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+
+}
+
+.papa_text {
+    max-width: 445px;
+
+}
+
+.money_title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    color: #fff;
+}
+
+.money_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #fff;
+    padding: 50px 0 40px;
+}
+
+.money_papa_img {
+    display: flex;
+    gap: 30px;
+
+}
+
+.money_img {
+    max-width: 32px;
+}
+
+.money_img_video {
+    max-width: 445px;
+    max-height: 311px;
+}
+
+.form {}
+
+.form_papa_all {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+}
+
+.form_papa_text {
+    max-width: 430px;
+    padding-top: 30px;
+}
+
+.form_title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    color: #000;
+}
+
+.form_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #000;
+    padding-top: 30px;
+}
+
+.form_papa {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form_name {
+    width: 540px;
+    height: 60px;
+    border-radius: 8px;
+    padding-left: 15px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+.form_namber {
+    width: 540px;
+    height: 60px;
+    border-radius: 8px;
+    padding-left: 15px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+.form_button {
+    max-width: 160px;
+    height: 50px;
+    border: 1.50px solid #ed4c5c;
+    border-radius: 6px;
+    width: 160px;
+    height: 50px;
+    color: #fff;
+    background: #ed4c5c;
+}
+
+.footer {
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+.footer_papa {}
+
+.footer_title {
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+
+    color: #101010;
+}
+
+.footer_text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #101010;
+    padding-top: 20px;
+}
+
+.footer_text_2 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #101010;
+    padding-top: 45px;
+}
+
+@media screen and (max-width: 1020px) {
+    .opportunities_papa {
+        flex-direction: column;
+        gap: 220px;
+    }
+
+    .opportunities_item_card {
+        left: 37%;
+        right: 37%;
+
+
+        height: 280px;
+        width: 220px;
+    }
+
+    .form_papa_all {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .form_papa_text,
+    .form_text {
+        max-width: none;
+        text-align: center;
+    }
+
+    .form_papa {
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width:940px) {
+    .about_papa {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .about_text {
+        max-width: none;
+        text-align: center;
+    }
+
+    .money_papa {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+
+    }
+
+    .papa_text {
+        max-width: none;
+
+    }
+
+    .money_text {
+        text-align: center;
+    }
+
+    .money_papa_img {
+        justify-content: center;
+    }
+
+    .money_img_video {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .header_navbar {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .header_text_papa {
+        margin-top: 50px;
+    }
+
+    .tehnology_papa {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .down {
+        margin-top: 170px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .opportunities_item_card {
+        left: 28%;
+        right: 28%;
+    }
+
+    .header_title {
+        font-size: 35px;
+    }
+    .header_text{
+        font-size: 20px;
+    }
+
+    .menu_papa {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .header_navbar {
+        padding-top: 20px;
+        gap: 40px;
+    }
+
+    .form_name {
+        width: 270px;
+    }
+
+    .form_namber {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .opportunities_item_card {
+        left: 15%;
+        right: 15%;
+    }
+    .tehnology_papa{
+        grid-template-columns: 1fr;
+    }
+    .vtoroy{
+        margin-top: 150px;
+    }
+}
+@media screen and (max-width:335px){
+    .opportunities_item_card {
+        left: 8%;
+        right: 8%;
+    }
+    .money_title,.header_title{
+        font-size: 30px;
+    }
 }
